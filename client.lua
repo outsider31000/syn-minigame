@@ -6,7 +6,7 @@ function openGui(sentLength,taskID,namesent,chancesent,skillGapSent)
     Wait(1000)
     guiEnabled = true
     SetNuiFocus(guiEnabled,false)
-    print("taskbar started")
+    --print("taskbar started")
     SendNUIMessage({runProgress = true, Length = sentLength, Task = taskID, name = namesent, chance = chancesent, skillGap = skillGapSent})
 end
 function updateGui(sentLength,taskID,namesent,chancesent,skillGapSent)
@@ -81,10 +81,10 @@ AddEventHandler('factor:restore', function()
     FactorFunction(true)
 end)
 
--- difficulty around 1200 becomes hard on the 4-5th use
--- difficulty around 2500 should never really be a problem - just keeps them focused.
+-- Difficulty around 1200 becomes hard on the 4-5th use
+-- Difficulty around 2500 should never really be a problem - just keeps them focused.
 
--- skillGap is the width of our current skill, 20 being easy, lower down to 5 is harder, almost impossible with higher speeds.
+-- SkillGap is the width of our current skill, 20 being easy, lower down to 5 is harder, almost impossible with higher speeds.
 
 function taskBar(difficulty,skillGapSent)
     Wait(100)

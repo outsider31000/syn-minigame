@@ -7,7 +7,7 @@ $(document).ready(function(){
     var percent = 0;
   
     document.onkeydown = function (data) {
-        // 69 = E btw lol rofl heh 
+        // 69 = E
         if (data.which == 69) {
           closeMain()
           $.post('http://syn_minigame/taskEnd', JSON.stringify({taskResult: percent}));
@@ -39,10 +39,10 @@ $(document).ready(function(){
         $('#progress-bar').css("width",item.Length + "%");
   
         if (item.Length < (item.chance + item.skillGap) && item.Length > (item.chance)) {
-          $('.skillprogress').css("background-color","rgba(120,50,50,0.9)");
+          $('.skillprogress').css("background-color","rgba(150,27,39,0.9)"); // Old Color rgba(120,50,50,0.9)
   
         } else {
-          $('.skillprogress').css("background-color","rgba(255,250,250,0.4)");
+          $('.skillprogress').css("background-color","rgba(255,250,250,0.4)"); // Old Color rgba(255,250,250,0.4)
         }
   
       }
