@@ -9,9 +9,9 @@ client_script {
 ui_page('ui/index.html')
 
 files({
-	'ui/index.html',
-	'ui/scripts.js',
-	"ui/style.css"
+	'index.html',
+	'scripts.js',
+	"style.css"
 })
 
 export "taskBar"
