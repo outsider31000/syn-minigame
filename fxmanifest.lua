@@ -6,13 +6,13 @@ client_script {
 	'client.lua'
 }
 
-ui_page('ui/index.html')
+ui_page 'index.html'
 
-files({
+files {
 	'index.html',
 	'scripts.js',
 	"css/style.css"
-})
+}
 
 export "taskBar"
 export "closeGuiFail"
