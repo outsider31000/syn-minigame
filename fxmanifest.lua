@@ -11,7 +11,7 @@ ui_page('ui/index.html')
 files({
 	'index.html',
 	'scripts.js',
-	"style.css"
+	"css/style.css"
 })
 
 export "taskBar"
